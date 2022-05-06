@@ -62,7 +62,10 @@ public class User {
       this.email = email;
    }
 
-   public void setCar(Car car) { this.car = car; }
+   public Car setCar(Car car) {
+       this.car = car;
+       return car;
+   }
 
    public Car getCar() { return car; }
 }

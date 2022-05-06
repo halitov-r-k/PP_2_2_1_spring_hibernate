@@ -39,8 +39,9 @@ public class Car {
         this.series = series;
     }
 
-    public void setUser(User user) {
+    public User setUser(User user) {
         this.user = user;
+        return user;
     }
 
     public Long getId() {
@@ -58,6 +59,7 @@ public class Car {
     public User getUser() {
         return user;
     }
+
 
     @Override
     public String toString() {
