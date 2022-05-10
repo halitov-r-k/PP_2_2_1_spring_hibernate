@@ -27,18 +27,13 @@ public class Car {
         this.series = series;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
+    public void setId(Long id) { this.id = id; }
     public void setModel(String model) {
         this.model = model;
     }
-
     public void setSeries(int series) {
         this.series = series;
     }
-
     public User setUser(User user) {
         this.user = user;
         return user;
@@ -63,6 +58,7 @@ public class Car {
 
     @Override
     public String toString() {
+
         return  "Car {" + "id=" + id + ", model='" + model + '\'' + ", series=" + series + '}';
     }
 }
